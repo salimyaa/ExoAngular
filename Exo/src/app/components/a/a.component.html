@@ -1,0 +1,6 @@
+<div style="border: 1px solid red;">
+  <h2>ComposantA</h2>
+  <p>Propriété initiale de A: {{dataOfA}}</p>
+</div>
+
+<app-b  [propOfB]="dataFromA" (myEmitter)="afficher($event)" [propSentByEventBtoAtoB]="dataFromEvent"></app-b>
