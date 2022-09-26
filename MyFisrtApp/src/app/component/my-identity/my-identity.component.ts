@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-my-identity',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-identity.component.scss']
 })
 export class MyIdentityComponent implements OnInit {
-
-  constructor() { }
+  myId?:string;
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params:Params)=>{this.myId=params['id'] || "pas d'id"});
   }
 
 }

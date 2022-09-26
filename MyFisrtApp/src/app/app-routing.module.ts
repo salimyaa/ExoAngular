@@ -5,7 +5,8 @@ import {ContactPageComponent} from './component/contact-page/contact-page.compon
 
 const routes: Routes = [
   {path:'contact', component:ContactPageComponent},
-  {path:'module', loadChildren: ()=> import('./info-module/info-module.module').then((m)=>m.InfoModuleModule)}
+  {path:'module', loadChildren: ()=> import('./info-module/info-module.module').then((m)=>m.InfoModuleModule)},
+  {path:'', redirectTo:'contact',pathMatch:'full'}
 ];
 
 @NgModule({

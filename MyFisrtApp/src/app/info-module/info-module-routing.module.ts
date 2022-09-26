@@ -7,7 +7,7 @@ import {InfoPageComponent} from '../component/info-page/info-page.component';
 
 const routes: Routes = [
   {
-    path:'identity',component:MyIdentityComponent
+    path:'identity/:id',component:MyIdentityComponent
   },
   {
     path:'infoPage',component:InfoPageComponent
