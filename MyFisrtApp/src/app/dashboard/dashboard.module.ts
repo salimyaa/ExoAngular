@@ -17,5 +17,9 @@ import { DashboardMyDetailComponent } from './dashboard-my-detail/dashboard-my-d
     CommonModule,
     DashboardRoutingModule
   ]
+  ,
+  exports:[DashboardHomeComponent]
 })
-export class DashboardModule { }
+export class DashboardModule {
+
+}

@@ -15,12 +15,13 @@ const routes: Routes = [
       [
         {path:'',component:DashboardRouterComponent, pathMatch:'full'},
         {path:'home',component:DashboardHomeComponent,pathMatch:'full'},
-        {path:'mydetail',component:DashboardMyDetailComponent,pathMatch:'full'}
+        {path:'detail/:prenom/:nom',component:DashboardMyDetailComponent,pathMatch:'full'}
       ]
   }
 ];
 
 @NgModule({
+
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
