@@ -7,6 +7,8 @@ import { MyIdentityComponent } from './component/my-identity/my-identity.compone
 import { MyDescriptionComponent } from './component/my-description/my-description.component';
 import { InfoPageComponent } from './component/info-page/info-page.component';
 import { ContactPageComponent } from './component/contact-page/contact-page.component';
+import {DashboardHomeComponent} from "./dashboard/dashboard-home/dashboard-home.component";
+import {DashboardModule} from "./dashboard/dashboard.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { ContactPageComponent } from './component/contact-page/contact-page.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
